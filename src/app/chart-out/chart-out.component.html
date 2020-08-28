@@ -1,0 +1,33 @@
+<kendo-chart>
+    <kendo-chart-y-axis>
+        <kendo-chart-y-axis-item [title]="{ text: 'Power (bhp)' }">
+        </kendo-chart-y-axis-item>
+        <kendo-chart-y-axis-item
+            name="torque"
+            [title]="{ text: 'Torque (lb-ft)' }"
+        >
+        </kendo-chart-y-axis-item>
+    </kendo-chart-y-axis>
+
+    <kendo-chart-x-axis>
+        <kendo-chart-x-axis-item
+            [axisCrossingValue]="crossingValues"
+            [title]="{ text: 'Engine rpm' }"
+            [labels]="{ format: 'n0' }"
+        >
+        </kendo-chart-x-axis-item>
+    </kendo-chart-x-axis>
+    <kendo-chart-series>
+        <kendo-chart-series-item
+            *ngFor="let item of series"
+            [type]="item.type"
+            [name]="item.name"
+            [data]="item.data"
+            [xField]="item.xField"
+            [yField]="item.yField"
+            [tooltip]="item.tooltip"
+            [yAxis]="item.yAxis"
+        >
+        </kendo-chart-series-item>
+    </kendo-chart-series>
+</kendo-chart>
