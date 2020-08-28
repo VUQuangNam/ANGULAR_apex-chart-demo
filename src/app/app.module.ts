@@ -9,6 +9,7 @@ import { ChartsModule } from '@progress/kendo-angular-charts';
 import { Demochart2Component } from './demochart2/demochart2.component';
 import { CanvanjsComponent } from './canvanjs/canvanjs.component';
 import { ApxchartdemoComponent } from './apxchartdemo/apxchartdemo.component';
+import { NgApexchartsModule } from "ng-apexcharts";
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { ApxchartdemoComponent } from './apxchartdemo/apxchartdemo.component';
         BrowserModule,
         AppRoutingModule,
         HttpClientModule,
-        ChartsModule
+        ChartsModule,
+        NgApexchartsModule
     ],
     providers: [],
     bootstrap: [AppComponent]

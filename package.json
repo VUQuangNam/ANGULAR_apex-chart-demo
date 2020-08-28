@@ -25,7 +25,9 @@
         "@progress/kendo-angular-l10n": "^2.0.2",
         "@progress/kendo-angular-popup": "^3.0.6",
         "@progress/kendo-drawing": "^1.9.0",
+        "apexcharts": "^3.20.0",
         "highcharts": "^8.2.0",
+        "ng-apexcharts": "^1.5.1",
         "rxjs": "~6.5.4",
         "tslib": "^1.10.0",
         "zone.js": "~0.10.2"
